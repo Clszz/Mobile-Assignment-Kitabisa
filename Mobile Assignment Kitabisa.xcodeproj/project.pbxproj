@@ -19,6 +19,9 @@
 		E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC29243DAC7700CA05BB /* Model.swift */; };
 		E13ACC2C243DACF000CA05BB /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC2B243DACF000CA05BB /* Services.swift */; };
 		E13ACC2E243DAD0D00CA05BB /* ConstantValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC2D243DAD0D00CA05BB /* ConstantValue.swift */; };
+		E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */; };
+		E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */; };
+		E13ACC37243DAEA500CA05BB /* CardMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC35243DAEA500CA05BB /* CardMenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		E13ACC29243DAC7700CA05BB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E13ACC2B243DACF000CA05BB /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		E13ACC2D243DAD0D00CA05BB /* ConstantValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValue.swift; sourceTree = "<group>"; };
+		E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieProtocol.swift; sourceTree = "<group>"; };
+		E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenuViewController.swift; sourceTree = "<group>"; };
+		E13ACC35243DAEA500CA05BB /* CardMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,8 @@
 		E13ACC20243DAAAA00CA05BB /* Reuseable View */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */,
+				E13ACC35243DAEA500CA05BB /* CardMenuViewController.xib */,
 			);
 			path = "Reuseable View";
 			sourceTree = "<group>";
@@ -240,8 +248,17 @@
 		E13ACC26243DAB0300CA05BB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC31243DAE1400CA05BB /* List Movie Protocol */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		E13ACC31243DAE1400CA05BB /* List Movie Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */,
+			);
+			name = "List Movie Protocol";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E13ACBF7243DA9C400CA05BB /* LaunchScreen.storyboard in Resources */,
+				E13ACC37243DAEA500CA05BB /* CardMenuViewController.xib in Resources */,
 				E13ACBF4243DA9C400CA05BB /* Assets.xcassets in Resources */,
 				E13ACBEF243DA9C100CA05BB /* Main.storyboard in Resources */,
 			);
@@ -375,9 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */,
 				E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */,
 				E13ACC2C243DACF000CA05BB /* Services.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
+				E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */,
 				E13ACC2E243DAD0D00CA05BB /* ConstantValue.swift in Sources */,
 				E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */,
 				E13ACBEA243DA9C100CA05BB /* SceneDelegate.swift in Sources */,

@@ -158,10 +158,13 @@ extension MovieDetailViewController{
     }
     
     private func checkTableData() {
-        if listOfReviews.count == 0{
-            tableView.isHidden = true
-        }else{
-            tableView.isHidden = false
+        if listOfReviews.isEmpty{
+            self.tableView.tableFooterView = UIView()
+            let noDataLabel: UILabel  = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text          = "No Review"
+            noDataLabel.textColor     = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView  = noDataLabel
         }
     }
     

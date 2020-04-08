@@ -30,7 +30,9 @@
 		E13ACC4B243DBBF300CA05BB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */; };
 		E13ACC52243DBCBA00CA05BB /* ListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */; };
 		E13ACC53243DBCBA00CA05BB /* ListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */; };
-		E13ACC55243E37D600CA05BB /* CoreData Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC54243E37D600CA05BB /* CoreData Services.swift */; };
+		E13ACC57243E918600CA05BB /* ListFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC56243E918600CA05BB /* ListFavoriteViewController.swift */; };
+		E13ACC5A243E91B800CA05BB /* ListFavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC58243E91B800CA05BB /* ListFavoriteTableViewCell.swift */; };
+		E13ACC5B243E91B800CA05BB /* ListFavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC59243E91B800CA05BB /* ListFavoriteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +82,9 @@
 		E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewTableViewCell.swift; sourceTree = "<group>"; };
 		E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListReviewTableViewCell.xib; sourceTree = "<group>"; };
-		E13ACC54243E37D600CA05BB /* CoreData Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData Services.swift"; sourceTree = "<group>"; };
+		E13ACC56243E918600CA05BB /* ListFavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoriteViewController.swift; sourceTree = "<group>"; };
+		E13ACC58243E91B800CA05BB /* ListFavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		E13ACC59243E91B800CA05BB /* ListFavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListFavoriteTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				E13ACC2B243DACF000CA05BB /* API Services.swift */,
-				E13ACC54243E37D600CA05BB /* CoreData Services.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 		E13ACC23243DAAD700CA05BB /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC56243E918600CA05BB /* ListFavoriteViewController.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -307,6 +311,8 @@
 		E13ACC3A243DB07600CA05BB /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC58243E91B800CA05BB /* ListFavoriteTableViewCell.swift */,
+				E13ACC59243E91B800CA05BB /* ListFavoriteTableViewCell.xib */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -429,6 +435,7 @@
 				E13ACC3E243DB09700CA05BB /* ListMovieTableViewCell.xib in Resources */,
 				E13ACC47243DB1DF00CA05BB /* CategoryTableViewCell.xib in Resources */,
 				E13ACBF4243DA9C400CA05BB /* Assets.xcassets in Resources */,
+				E13ACC5B243E91B800CA05BB /* ListFavoriteTableViewCell.xib in Resources */,
 				E13ACBEF243DA9C100CA05BB /* Main.storyboard in Resources */,
 				E13ACC53243DBCBA00CA05BB /* ListReviewTableViewCell.xib in Resources */,
 			);
@@ -455,7 +462,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13ACC55243E37D600CA05BB /* CoreData Services.swift in Sources */,
 				E13ACC3D243DB09700CA05BB /* ListMovieTableViewCell.swift in Sources */,
 				E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */,
 				E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */,
@@ -465,6 +471,8 @@
 				E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */,
 				E13ACC52243DBCBA00CA05BB /* ListReviewTableViewCell.swift in Sources */,
 				E13ACC46243DB1DF00CA05BB /* CategoryTableViewCell.swift in Sources */,
+				E13ACC5A243E91B800CA05BB /* ListFavoriteTableViewCell.swift in Sources */,
+				E13ACC57243E918600CA05BB /* ListFavoriteViewController.swift in Sources */,
 				E13ACC2E243DAD0D00CA05BB /* ConstantValue.swift in Sources */,
 				E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */,
 				E13ACBEA243DA9C100CA05BB /* SceneDelegate.swift in Sources */,

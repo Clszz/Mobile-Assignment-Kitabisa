@@ -169,17 +169,32 @@
             </objects>
             <point key="canvasLocation" x="2156.521739130435" y="420.53571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--List Favorite View Controller-->
         <scene sceneID="PgS-6g-h16">
             <objects>
-                <viewController id="7qK-KZ-bpY" sceneMemberID="viewController">
+                <viewController id="7qK-KZ-bpY" customClass="ListFavoriteViewController" customModule="Mobile_Assignment_Kitabisa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6U-Dx-4Ti">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRp-yz-3BY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4ZN-E9-g04" firstAttribute="trailing" secondItem="aRp-yz-3BY" secondAttribute="trailing" id="Dds-gT-8KC"/>
+                            <constraint firstItem="aRp-yz-3BY" firstAttribute="leading" secondItem="4ZN-E9-g04" secondAttribute="leading" id="FFK-7r-rv4"/>
+                            <constraint firstItem="4ZN-E9-g04" firstAttribute="bottom" secondItem="aRp-yz-3BY" secondAttribute="bottom" id="giz-2b-MWm"/>
+                            <constraint firstItem="aRp-yz-3BY" firstAttribute="top" secondItem="4ZN-E9-g04" secondAttribute="top" id="raf-oG-ORq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4ZN-E9-g04"/>
                     </view>
                     <navigationItem key="navigationItem" id="qKp-f8-C0a"/>
+                    <connections>
+                        <outlet property="tableView" destination="aRp-yz-3BY" id="F14-Iv-r6d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGy-An-5Uc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -44,15 +44,15 @@ class ListMovieViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-        case "goToMovieDetails": break
-//            let movieDetail = segue.destination as! MovieDetailsViewController
-//            let data = sender as? Int
-//            movieDetail.id = "\(data!)"
+        case "goToMovieDetails":
+            let movieDetail = segue.destination as! MovieDetailViewController
+            let data = sender as? Int
+            movieDetail.id = "\(data!)"
         default:
             break
         }
     }
-
+    
     @IBAction func favoriteTapped(_ sender: Any) {
         performSegue(withIdentifier: "goToFavorite", sender: nil)
     }
@@ -170,7 +170,7 @@ extension ListMovieViewController{
             animator.continueAnimation(withTimingParameters: nil, durationFactor: 0)
         }
     }
-
+    
 }
 extension ListMovieViewController:CategoryProtocol{
     func categoryTapped(category: String) {

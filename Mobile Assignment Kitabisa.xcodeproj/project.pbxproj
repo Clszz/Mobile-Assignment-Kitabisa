@@ -27,6 +27,9 @@
 		E13ACC46243DB1DF00CA05BB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC44243DB1DF00CA05BB /* CategoryTableViewCell.swift */; };
 		E13ACC47243DB1DF00CA05BB /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC45243DB1DF00CA05BB /* CategoryTableViewCell.xib */; };
 		E13ACC49243DB26000CA05BB /* ListMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC48243DB26000CA05BB /* ListMovieViewController.swift */; };
+		E13ACC4B243DBBF300CA05BB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */; };
+		E13ACC52243DBCBA00CA05BB /* ListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */; };
+		E13ACC53243DBCBA00CA05BB /* ListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		E13ACC44243DB1DF00CA05BB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		E13ACC45243DB1DF00CA05BB /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		E13ACC48243DB26000CA05BB /* ListMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieViewController.swift; sourceTree = "<group>"; };
+		E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewTableViewCell.swift; sourceTree = "<group>"; };
+		E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListReviewTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +238,7 @@
 		E13ACC22243DAACF00CA05BB /* Movie Details */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */,
 			);
 			path = "Movie Details";
 			sourceTree = "<group>";
@@ -288,6 +295,8 @@
 		E13ACC39243DB07100CA05BB /* Movie Detail */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */,
+				E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */,
 			);
 			path = "Movie Detail";
 			sourceTree = "<group>";
@@ -418,6 +427,7 @@
 				E13ACC47243DB1DF00CA05BB /* CategoryTableViewCell.xib in Resources */,
 				E13ACBF4243DA9C400CA05BB /* Assets.xcassets in Resources */,
 				E13ACBEF243DA9C100CA05BB /* Main.storyboard in Resources */,
+				E13ACC53243DBCBA00CA05BB /* ListReviewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +456,10 @@
 				E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */,
 				E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */,
 				E13ACC2C243DACF000CA05BB /* Services.swift in Sources */,
+				E13ACC4B243DBBF300CA05BB /* MovieDetailViewController.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
 				E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */,
+				E13ACC52243DBCBA00CA05BB /* ListReviewTableViewCell.swift in Sources */,
 				E13ACC46243DB1DF00CA05BB /* CategoryTableViewCell.swift in Sources */,
 				E13ACC2E243DAD0D00CA05BB /* ConstantValue.swift in Sources */,
 				E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */,

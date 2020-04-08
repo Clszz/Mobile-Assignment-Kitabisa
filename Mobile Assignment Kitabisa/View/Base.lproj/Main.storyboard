@@ -7,29 +7,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--tMDB-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mobile_Assignment_Kitabisa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListMovieViewController" customModule="Mobile_Assignment_Kitabisa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-38-8tm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="704"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tNc-38-8tm" secondAttribute="bottom" constant="70" id="0iw-ei-ogR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tNc-38-8tm" secondAttribute="bottom" constant="25" id="0iw-ei-ogR"/>
                             <constraint firstItem="tNc-38-8tm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gZb-oe-oiA"/>
                             <constraint firstItem="tNc-38-8tm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mdz-hF-xrM"/>
                             <constraint firstItem="tNc-38-8tm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mf8-cZ-bkO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ujc-7t-06X"/>
+                    <navigationItem key="navigationItem" title="tMDB" id="ujc-7t-06X">
+                        <barButtonItem key="rightBarButtonItem" image="Right Bar Button" id="azO-o0-XjC"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tNc-38-8tm" id="YE4-7a-DLb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,4 +59,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="Right Bar Button" width="32" height="32"/>
+    </resources>
 </document>

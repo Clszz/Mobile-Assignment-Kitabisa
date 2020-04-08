@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardMenuViewController" customModule="Mobile_Assignment_Kitabisa" customModuleProvider="target">
             <connections>
+                <outlet property="anchorView" destination="GnU-bt-ghL" id="bxC-eP-A7n"/>
+                <outlet property="handleArea" destination="cgB-RM-lEO" id="clk-vJ-xYw"/>
+                <outlet property="tableView" destination="4LP-wd-f7F" id="Cgm-6q-PPu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,7 +47,7 @@
                         <constraint firstItem="shU-hq-khj" firstAttribute="centerX" secondItem="cgB-RM-lEO" secondAttribute="centerX" id="wwa-IB-6mA"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-wd-f7F">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-wd-f7F">
                     <rect key="frame" x="0.0" y="70" width="375" height="420"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>

@@ -22,6 +22,11 @@
 		E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */; };
 		E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */; };
 		E13ACC37243DAEA500CA05BB /* CardMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC35243DAEA500CA05BB /* CardMenuViewController.xib */; };
+		E13ACC3D243DB09700CA05BB /* ListMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC3B243DB09700CA05BB /* ListMovieTableViewCell.swift */; };
+		E13ACC3E243DB09700CA05BB /* ListMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC3C243DB09700CA05BB /* ListMovieTableViewCell.xib */; };
+		E13ACC46243DB1DF00CA05BB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC44243DB1DF00CA05BB /* CategoryTableViewCell.swift */; };
+		E13ACC47243DB1DF00CA05BB /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC45243DB1DF00CA05BB /* CategoryTableViewCell.xib */; };
+		E13ACC49243DB26000CA05BB /* ListMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC48243DB26000CA05BB /* ListMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieProtocol.swift; sourceTree = "<group>"; };
 		E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenuViewController.swift; sourceTree = "<group>"; };
 		E13ACC35243DAEA500CA05BB /* CardMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMenuViewController.xib; sourceTree = "<group>"; };
+		E13ACC3B243DB09700CA05BB /* ListMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieTableViewCell.swift; sourceTree = "<group>"; };
+		E13ACC3C243DB09700CA05BB /* ListMovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListMovieTableViewCell.xib; sourceTree = "<group>"; };
+		E13ACC44243DB1DF00CA05BB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E13ACC45243DB1DF00CA05BB /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		E13ACC48243DB26000CA05BB /* ListMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +205,9 @@
 		E13ACC1F243DAAA300CA05BB /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC38243DB06500CA05BB /* List Movie */,
+				E13ACC39243DB07100CA05BB /* Movie Detail */,
+				E13ACC3A243DB07600CA05BB /* Favorite */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -211,6 +224,7 @@
 		E13ACC21243DAAC300CA05BB /* List Movie */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC48243DB26000CA05BB /* ListMovieViewController.swift */,
 			);
 			path = "List Movie";
 			sourceTree = "<group>";
@@ -259,6 +273,39 @@
 				E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */,
 			);
 			name = "List Movie Protocol";
+			sourceTree = "<group>";
+		};
+		E13ACC38243DB06500CA05BB /* List Movie */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC3B243DB09700CA05BB /* ListMovieTableViewCell.swift */,
+				E13ACC3C243DB09700CA05BB /* ListMovieTableViewCell.xib */,
+				E13ACC3F243DB1B500CA05BB /* Card Menu */,
+			);
+			path = "List Movie";
+			sourceTree = "<group>";
+		};
+		E13ACC39243DB07100CA05BB /* Movie Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Movie Detail";
+			sourceTree = "<group>";
+		};
+		E13ACC3A243DB07600CA05BB /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		E13ACC3F243DB1B500CA05BB /* Card Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC44243DB1DF00CA05BB /* CategoryTableViewCell.swift */,
+				E13ACC45243DB1DF00CA05BB /* CategoryTableViewCell.xib */,
+			);
+			path = "Card Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +414,8 @@
 			files = (
 				E13ACBF7243DA9C400CA05BB /* LaunchScreen.storyboard in Resources */,
 				E13ACC37243DAEA500CA05BB /* CardMenuViewController.xib in Resources */,
+				E13ACC3E243DB09700CA05BB /* ListMovieTableViewCell.xib in Resources */,
+				E13ACC47243DB1DF00CA05BB /* CategoryTableViewCell.xib in Resources */,
 				E13ACBF4243DA9C400CA05BB /* Assets.xcassets in Resources */,
 				E13ACBEF243DA9C100CA05BB /* Main.storyboard in Resources */,
 			);
@@ -393,15 +442,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13ACC3D243DB09700CA05BB /* ListMovieTableViewCell.swift in Sources */,
 				E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */,
 				E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */,
 				E13ACC2C243DACF000CA05BB /* Services.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
 				E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */,
+				E13ACC46243DB1DF00CA05BB /* CategoryTableViewCell.swift in Sources */,
 				E13ACC2E243DAD0D00CA05BB /* ConstantValue.swift in Sources */,
 				E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */,
 				E13ACBEA243DA9C100CA05BB /* SceneDelegate.swift in Sources */,
 				E13ACC28243DAB4300CA05BB /* ExtensionUI.swift in Sources */,
+				E13ACC49243DB26000CA05BB /* ListMovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

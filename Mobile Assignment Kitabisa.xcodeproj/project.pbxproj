@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACBE7243DA9C100CA05BB /* AppDelegate.swift */; };
 		E13ACBEA243DA9C100CA05BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACBE9243DA9C100CA05BB /* SceneDelegate.swift */; };
-		E13ACBEC243DA9C100CA05BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACBEB243DA9C100CA05BB /* ViewController.swift */; };
 		E13ACBEF243DA9C100CA05BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13ACBED243DA9C100CA05BB /* Main.storyboard */; };
 		E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E13ACBF0243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld */; };
 		E13ACBF4243DA9C400CA05BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13ACBF3243DA9C400CA05BB /* Assets.xcassets */; };
 		E13ACBF7243DA9C400CA05BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13ACBF5243DA9C400CA05BB /* LaunchScreen.storyboard */; };
 		E13ACC02243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC01243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift */; };
 		E13ACC0D243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */; };
+		E13ACC28243DAB4300CA05BB /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		E13ACBE4243DA9C100CA05BB /* Mobile Assignment Kitabisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Assignment Kitabisa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13ACBE7243DA9C100CA05BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E13ACBE9243DA9C100CA05BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E13ACBEB243DA9C100CA05BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E13ACBEE243DA9C100CA05BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E13ACBF1243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mobile_Assignment_Kitabisa.xcdatamodel; sourceTree = "<group>"; };
 		E13ACBF3243DA9C400CA05BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		E13ACC08243DA9C400CA05BB /* Mobile Assignment KitabisaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Assignment KitabisaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Assignment_KitabisaUITests.swift; sourceTree = "<group>"; };
 		E13ACC0E243DA9C400CA05BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +101,11 @@
 		E13ACBE6243DA9C100CA05BB /* Mobile Assignment Kitabisa */ = {
 			isa = PBXGroup;
 			children = (
-				E13ACBE7243DA9C100CA05BB /* AppDelegate.swift */,
-				E13ACBE9243DA9C100CA05BB /* SceneDelegate.swift */,
-				E13ACBEB243DA9C100CA05BB /* ViewController.swift */,
-				E13ACBED243DA9C100CA05BB /* Main.storyboard */,
-				E13ACBF3243DA9C400CA05BB /* Assets.xcassets */,
-				E13ACBF5243DA9C400CA05BB /* LaunchScreen.storyboard */,
+				E13ACC1A243DA9CE00CA05BB /* Model */,
+				E13ACC1B243DA9D900CA05BB /* View */,
+				E13ACC1C243DA9DD00CA05BB /* Controller */,
+				E13ACC1E243DAA5500CA05BB /* Service */,
+				E13ACC1D243DA9EB00CA05BB /* Utils */,
 				E13ACBF8243DA9C400CA05BB /* Info.plist */,
 				E13ACBF0243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld */,
 			);
@@ -129,6 +128,111 @@
 				E13ACC0E243DA9C400CA05BB /* Info.plist */,
 			);
 			path = "Mobile Assignment KitabisaUITests";
+			sourceTree = "<group>";
+		};
+		E13ACC1A243DA9CE00CA05BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E13ACC1B243DA9D900CA05BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC1F243DAAA300CA05BB /* TableViewCell */,
+				E13ACC20243DAAAA00CA05BB /* Reuseable View */,
+				E13ACBED243DA9C100CA05BB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E13ACC1C243DA9DD00CA05BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC21243DAAC300CA05BB /* List Movie */,
+				E13ACC22243DAACF00CA05BB /* Movie Details */,
+				E13ACC23243DAAD700CA05BB /* Favorite */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E13ACC1D243DA9EB00CA05BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC26243DAB0300CA05BB /* Protocols */,
+				E13ACC25243DAAFA00CA05BB /* Extension */,
+				E13ACC24243DAAF500CA05BB /* Constant */,
+				E13ACBE7243DA9C100CA05BB /* AppDelegate.swift */,
+				E13ACBE9243DA9C100CA05BB /* SceneDelegate.swift */,
+				E13ACBF3243DA9C400CA05BB /* Assets.xcassets */,
+				E13ACBF5243DA9C400CA05BB /* LaunchScreen.storyboard */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E13ACC1E243DAA5500CA05BB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E13ACC1F243DAAA300CA05BB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E13ACC20243DAAAA00CA05BB /* Reuseable View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Reuseable View";
+			sourceTree = "<group>";
+		};
+		E13ACC21243DAAC300CA05BB /* List Movie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List Movie";
+			sourceTree = "<group>";
+		};
+		E13ACC22243DAACF00CA05BB /* Movie Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Movie Details";
+			sourceTree = "<group>";
+		};
+		E13ACC23243DAAD700CA05BB /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		E13ACC24243DAAF500CA05BB /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		E13ACC25243DAAFA00CA05BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		E13ACC26243DAB0300CA05BB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +366,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13ACBEC243DA9C100CA05BB /* ViewController.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
 				E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */,
 				E13ACBEA243DA9C100CA05BB /* SceneDelegate.swift in Sources */,
+				E13ACC28243DAB4300CA05BB /* ExtensionUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

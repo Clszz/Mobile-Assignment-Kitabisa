@@ -16,6 +16,7 @@
 		E13ACC02243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC01243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift */; };
 		E13ACC0D243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */; };
 		E13ACC28243DAB4300CA05BB /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */; };
+		E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC29243DAC7700CA05BB /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Assignment_KitabisaUITests.swift; sourceTree = "<group>"; };
 		E13ACC0E243DA9C400CA05BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
+		E13ACC29243DAC7700CA05BB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		E13ACC1A243DA9CE00CA05BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC29243DAC7700CA05BB /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
 				E13ACBF2243DA9C100CA05BB /* Mobile_Assignment_Kitabisa.xcdatamodeld in Sources */,
 				E13ACBEA243DA9C100CA05BB /* SceneDelegate.swift in Sources */,

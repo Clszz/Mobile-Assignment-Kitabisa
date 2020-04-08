@@ -17,7 +17,7 @@
 		E13ACC0D243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */; };
 		E13ACC28243DAB4300CA05BB /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */; };
 		E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC29243DAC7700CA05BB /* Model.swift */; };
-		E13ACC2C243DACF000CA05BB /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC2B243DACF000CA05BB /* Services.swift */; };
+		E13ACC2C243DACF000CA05BB /* API Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC2B243DACF000CA05BB /* API Services.swift */; };
 		E13ACC2E243DAD0D00CA05BB /* ConstantValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC2D243DAD0D00CA05BB /* ConstantValue.swift */; };
 		E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */; };
 		E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */; };
@@ -30,6 +30,7 @@
 		E13ACC4B243DBBF300CA05BB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */; };
 		E13ACC52243DBCBA00CA05BB /* ListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */; };
 		E13ACC53243DBCBA00CA05BB /* ListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */; };
+		E13ACC55243E37D600CA05BB /* CoreData Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC54243E37D600CA05BB /* CoreData Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		E13ACC0E243DA9C400CA05BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 		E13ACC29243DAC7700CA05BB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		E13ACC2B243DACF000CA05BB /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		E13ACC2B243DACF000CA05BB /* API Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Services.swift"; sourceTree = "<group>"; };
 		E13ACC2D243DAD0D00CA05BB /* ConstantValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValue.swift; sourceTree = "<group>"; };
 		E13ACC32243DAE3200CA05BB /* ListMovieProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieProtocol.swift; sourceTree = "<group>"; };
 		E13ACC34243DAEA500CA05BB /* CardMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenuViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		E13ACC4A243DBBF300CA05BB /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		E13ACC50243DBCBA00CA05BB /* ListReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewTableViewCell.swift; sourceTree = "<group>"; };
 		E13ACC51243DBCBA00CA05BB /* ListReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListReviewTableViewCell.xib; sourceTree = "<group>"; };
+		E13ACC54243E37D600CA05BB /* CoreData Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData Services.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +205,8 @@
 		E13ACC1E243DAA5500CA05BB /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E13ACC2B243DACF000CA05BB /* Services.swift */,
+				E13ACC2B243DACF000CA05BB /* API Services.swift */,
+				E13ACC54243E37D600CA05BB /* CoreData Services.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -452,10 +455,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13ACC55243E37D600CA05BB /* CoreData Services.swift in Sources */,
 				E13ACC3D243DB09700CA05BB /* ListMovieTableViewCell.swift in Sources */,
 				E13ACC33243DAE3200CA05BB /* ListMovieProtocol.swift in Sources */,
 				E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */,
-				E13ACC2C243DACF000CA05BB /* Services.swift in Sources */,
+				E13ACC2C243DACF000CA05BB /* API Services.swift in Sources */,
 				E13ACC4B243DBBF300CA05BB /* MovieDetailViewController.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
 				E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */,

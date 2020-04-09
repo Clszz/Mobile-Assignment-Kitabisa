@@ -14,7 +14,6 @@
 		E13ACBF4243DA9C400CA05BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13ACBF3243DA9C400CA05BB /* Assets.xcassets */; };
 		E13ACBF7243DA9C400CA05BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13ACBF5243DA9C400CA05BB /* LaunchScreen.storyboard */; };
 		E13ACC02243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC01243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift */; };
-		E13ACC0D243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */; };
 		E13ACC28243DAB4300CA05BB /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */; };
 		E13ACC2A243DAC7700CA05BB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC29243DAC7700CA05BB /* Model.swift */; };
 		E13ACC2C243DACF000CA05BB /* API Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC2B243DACF000CA05BB /* API Services.swift */; };
@@ -33,17 +32,12 @@
 		E13ACC57243E918600CA05BB /* ListFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC56243E918600CA05BB /* ListFavoriteViewController.swift */; };
 		E13ACC5A243E91B800CA05BB /* ListFavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC58243E91B800CA05BB /* ListFavoriteTableViewCell.swift */; };
 		E13ACC5B243E91B800CA05BB /* ListFavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E13ACC59243E91B800CA05BB /* ListFavoriteTableViewCell.xib */; };
+		E13ACC5E243EE84200CA05BB /* APIClientProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC5D243EE84200CA05BB /* APIClientProtocols.swift */; };
+		E13ACC64243EF5D800CA05BB /* CoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13ACC63243EF5D800CA05BB /* CoreDataProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E13ACBFE243DA9C400CA05BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E13ACBDC243DA9C100CA05BB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E13ACBE3243DA9C100CA05BB;
-			remoteInfo = "Mobile Assignment Kitabisa";
-		};
-		E13ACC09243DA9C400CA05BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E13ACBDC243DA9C100CA05BB /* Project object */;
 			proxyType = 1;
@@ -64,9 +58,6 @@
 		E13ACBFD243DA9C400CA05BB /* Mobile Assignment KitabisaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Assignment KitabisaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13ACC01243DA9C400CA05BB /* Mobile_Assignment_KitabisaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Assignment_KitabisaTests.swift; sourceTree = "<group>"; };
 		E13ACC03243DA9C400CA05BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E13ACC08243DA9C400CA05BB /* Mobile Assignment KitabisaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Assignment KitabisaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Assignment_KitabisaUITests.swift; sourceTree = "<group>"; };
-		E13ACC0E243DA9C400CA05BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E13ACC27243DAB4300CA05BB /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 		E13ACC29243DAC7700CA05BB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E13ACC2B243DACF000CA05BB /* API Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Services.swift"; sourceTree = "<group>"; };
@@ -85,6 +76,8 @@
 		E13ACC56243E918600CA05BB /* ListFavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoriteViewController.swift; sourceTree = "<group>"; };
 		E13ACC58243E91B800CA05BB /* ListFavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		E13ACC59243E91B800CA05BB /* ListFavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListFavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		E13ACC5D243EE84200CA05BB /* APIClientProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocols.swift; sourceTree = "<group>"; };
+		E13ACC63243EF5D800CA05BB /* CoreDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +95,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E13ACC05243DA9C400CA05BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,7 +103,6 @@
 			children = (
 				E13ACBE6243DA9C100CA05BB /* Mobile Assignment Kitabisa */,
 				E13ACC00243DA9C400CA05BB /* Mobile Assignment KitabisaTests */,
-				E13ACC0B243DA9C400CA05BB /* Mobile Assignment KitabisaUITests */,
 				E13ACBE5243DA9C100CA05BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +112,6 @@
 			children = (
 				E13ACBE4243DA9C100CA05BB /* Mobile Assignment Kitabisa.app */,
 				E13ACBFD243DA9C400CA05BB /* Mobile Assignment KitabisaTests.xctest */,
-				E13ACC08243DA9C400CA05BB /* Mobile Assignment KitabisaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,15 +137,6 @@
 				E13ACC03243DA9C400CA05BB /* Info.plist */,
 			);
 			path = "Mobile Assignment KitabisaTests";
-			sourceTree = "<group>";
-		};
-		E13ACC0B243DA9C400CA05BB /* Mobile Assignment KitabisaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E13ACC0C243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift */,
-				E13ACC0E243DA9C400CA05BB /* Info.plist */,
-			);
-			path = "Mobile Assignment KitabisaUITests";
 			sourceTree = "<group>";
 		};
 		E13ACC1A243DA9CE00CA05BB /* Model */ = {
@@ -276,7 +251,9 @@
 		E13ACC26243DAB0300CA05BB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E13ACC62243EF5BB00CA05BB /* CoreData Protocol */,
 				E13ACC31243DAE1400CA05BB /* List Movie Protocol */,
+				E13ACC5C243EE81F00CA05BB /* API Protocol */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -326,6 +303,22 @@
 			path = "Card Menu";
 			sourceTree = "<group>";
 		};
+		E13ACC5C243EE81F00CA05BB /* API Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC5D243EE84200CA05BB /* APIClientProtocols.swift */,
+			);
+			name = "API Protocol";
+			sourceTree = "<group>";
+		};
+		E13ACC62243EF5BB00CA05BB /* CoreData Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACC63243EF5D800CA05BB /* CoreDataProtocols.swift */,
+			);
+			name = "CoreData Protocol";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,24 +357,6 @@
 			productReference = E13ACBFD243DA9C400CA05BB /* Mobile Assignment KitabisaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E13ACC07243DA9C400CA05BB /* Mobile Assignment KitabisaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E13ACC17243DA9C400CA05BB /* Build configuration list for PBXNativeTarget "Mobile Assignment KitabisaUITests" */;
-			buildPhases = (
-				E13ACC04243DA9C400CA05BB /* Sources */,
-				E13ACC05243DA9C400CA05BB /* Frameworks */,
-				E13ACC06243DA9C400CA05BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E13ACC0A243DA9C400CA05BB /* PBXTargetDependency */,
-			);
-			name = "Mobile Assignment KitabisaUITests";
-			productName = "Mobile Assignment KitabisaUITests";
-			productReference = E13ACC08243DA9C400CA05BB /* Mobile Assignment KitabisaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -396,10 +371,6 @@
 						CreatedOnToolsVersion = 11.4;
 					};
 					E13ACBFC243DA9C400CA05BB = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = E13ACBE3243DA9C100CA05BB;
-					};
-					E13ACC07243DA9C400CA05BB = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = E13ACBE3243DA9C100CA05BB;
 					};
@@ -420,7 +391,6 @@
 			targets = (
 				E13ACBE3243DA9C100CA05BB /* Mobile Assignment Kitabisa */,
 				E13ACBFC243DA9C400CA05BB /* Mobile Assignment KitabisaTests */,
-				E13ACC07243DA9C400CA05BB /* Mobile Assignment KitabisaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,13 +418,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E13ACC06243DA9C400CA05BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,7 +431,9 @@
 				E13ACC2C243DACF000CA05BB /* API Services.swift in Sources */,
 				E13ACC4B243DBBF300CA05BB /* MovieDetailViewController.swift in Sources */,
 				E13ACBE8243DA9C100CA05BB /* AppDelegate.swift in Sources */,
+				E13ACC64243EF5D800CA05BB /* CoreDataProtocols.swift in Sources */,
 				E13ACC36243DAEA500CA05BB /* CardMenuViewController.swift in Sources */,
+				E13ACC5E243EE84200CA05BB /* APIClientProtocols.swift in Sources */,
 				E13ACC52243DBCBA00CA05BB /* ListReviewTableViewCell.swift in Sources */,
 				E13ACC46243DB1DF00CA05BB /* CategoryTableViewCell.swift in Sources */,
 				E13ACC5A243E91B800CA05BB /* ListFavoriteTableViewCell.swift in Sources */,
@@ -489,14 +454,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E13ACC04243DA9C400CA05BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E13ACC0D243DA9C400CA05BB /* Mobile_Assignment_KitabisaUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -504,11 +461,6 @@
 			isa = PBXTargetDependency;
 			target = E13ACBE3243DA9C100CA05BB /* Mobile Assignment Kitabisa */;
 			targetProxy = E13ACBFE243DA9C400CA05BB /* PBXContainerItemProxy */;
-		};
-		E13ACC0A243DA9C400CA05BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E13ACBE3243DA9C100CA05BB /* Mobile Assignment Kitabisa */;
-			targetProxy = E13ACC09243DA9C400CA05BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,46 +678,6 @@
 			};
 			name = Release;
 		};
-		E13ACC18243DA9C400CA05BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7858P7ZUST;
-				INFOPLIST_FILE = "Mobile Assignment KitabisaUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Cls.Mobile-Assignment-KitabisaUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Mobile Assignment Kitabisa";
-			};
-			name = Debug;
-		};
-		E13ACC19243DA9C400CA05BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7858P7ZUST;
-				INFOPLIST_FILE = "Mobile Assignment KitabisaUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Cls.Mobile-Assignment-KitabisaUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Mobile Assignment Kitabisa";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -792,15 +704,6 @@
 			buildConfigurations = (
 				E13ACC15243DA9C400CA05BB /* Debug */,
 				E13ACC16243DA9C400CA05BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E13ACC17243DA9C400CA05BB /* Build configuration list for PBXNativeTarget "Mobile Assignment KitabisaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E13ACC18243DA9C400CA05BB /* Debug */,
-				E13ACC19243DA9C400CA05BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

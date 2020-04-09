@@ -87,45 +87,6 @@ extension MovieDetailViewController{
         }
     }
     
-    private func requestFavorites(completion: (_ complete: Bool) -> ()) {
-        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoriteMovie")
-        do {
-            listOfFavorites = try  managedContext.fetch(request) as? [FavoriteMovie]
-            completion(true)
-        } catch {
-            print("Unable to fetch data: ", error.localizedDescription)
-            completion(false)
-        }
-    }
-    
-    private func saveFavorites(completion: (_ finished:Bool) -> ()){
-        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
-        
-        let movie = FavoriteMovie(context: managedContext)
-        movie.id = Int32(id) ?? 0
-        movie.original_title = movieDetails.original_title
-        movie.poster_path = movieDetails.poster_path
-        movie.release_date = movieDetails.release_date
-        movie.overview = movieDetails.overview
-        do{
-            try managedContext.save()
-            completion(true)
-        }catch{
-            completion(false)
-        }
-    }
-    
-    private func deleteFavorites(index: Int) {
-        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
-        managedContext.delete((listOfFavorites?[index])!)
-        do {
-            try managedContext.save()
-        } catch {
-            print("Failed to delete data: ", error.localizedDescription)
-        }
-    }
-    
     private func findAndDelete() {
         for (index,item) in listOfFavorites!.enumerated(){
             if String(item.id) == id{
@@ -168,6 +129,46 @@ extension MovieDetailViewController{
         }
     }
     
+}
+extension MovieDetailViewController:CoreDataServiceProtocol{
+    internal func requestFavorites(completion: (_ complete: Bool) -> ()) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoriteMovie")
+        do {
+            listOfFavorites = try  managedContext.fetch(request) as? [FavoriteMovie]
+            completion(true)
+        } catch {
+            print("Unable to fetch data: ", error.localizedDescription)
+            completion(false)
+        }
+    }
+    
+    internal func saveFavorites(completion: (_ finished:Bool) -> ()){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        
+        let movie = FavoriteMovie(context: managedContext)
+        movie.id = Int32(id) ?? 0
+        movie.original_title = movieDetails.original_title
+        movie.poster_path = movieDetails.poster_path
+        movie.release_date = movieDetails.release_date
+        movie.overview = movieDetails.overview
+        do{
+            try managedContext.save()
+            completion(true)
+        }catch{
+            completion(false)
+        }
+    }
+    
+    internal func deleteFavorites(index: Int) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.delete((listOfFavorites?[index])!)
+        do {
+            try managedContext.save()
+        } catch {
+            print("Failed to delete data: ", error.localizedDescription)
+        }
+    }
 }
 extension MovieDetailViewController:UITableViewDataSource, UITableViewDelegate{
     private func registerCell() {

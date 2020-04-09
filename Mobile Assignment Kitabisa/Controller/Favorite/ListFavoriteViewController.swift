@@ -25,6 +25,7 @@ class ListFavoriteViewController: UIViewController {
                 updateTable()
             }
         }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

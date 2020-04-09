@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 enum ServiceError: Error{
     case noDataAvailable
     case decodeFail
@@ -25,6 +23,8 @@ struct MovieService {
         self.resourceURL = resourceURL
     }
     
+}
+extension MovieService:MovieAPIProtocol{
     func getMovies(completion: @escaping(Result<[Movie], ServiceError>) -> Void) {
         let dataTask = URLSession.shared.dataTask(with: resourceURL){ data, res, error in
             guard let jsonData = data else {
@@ -76,6 +76,8 @@ struct ReviewService {
         self.resourceURL = resourceURL
     }
     
+}
+extension ReviewService:ReviewAPIProtocol{
     func getReviews(completion: @escaping(Result<[ReviewDetails], ServiceError>) -> Void) {
         let dataTask = URLSession.shared.dataTask(with: resourceURL){ data, res, error in
             guard let jsonData = data else {

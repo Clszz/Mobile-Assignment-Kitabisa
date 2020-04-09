@@ -64,7 +64,7 @@
                                             <constraint firstAttribute="height" constant="266" id="lsQ-DV-qmB"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgN-Cy-KWw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgN-Cy-KWw">
                                         <rect key="frame" x="190" y="16" width="180" height="26.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -129,13 +129,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfK-VL-Vhr">
-                                <rect key="frame" x="20" y="370" width="374" height="36"/>
+                                <rect key="frame" x="20" y="378" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-QX-6HW">
-                                <rect key="frame" x="0.0" y="418" width="414" height="444"/>
+                                <rect key="frame" x="0.0" y="422" width="414" height="440"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -143,13 +143,13 @@
                         <constraints>
                             <constraint firstItem="tfK-VL-Vhr" firstAttribute="leading" secondItem="1lQ-6v-oEw" secondAttribute="leading" constant="20" id="5Cr-Zn-g9v"/>
                             <constraint firstItem="PNH-QX-6HW" firstAttribute="bottom" secondItem="1lQ-6v-oEw" secondAttribute="bottom" id="BqV-cH-dic"/>
-                            <constraint firstItem="PNH-QX-6HW" firstAttribute="top" secondItem="tfK-VL-Vhr" secondAttribute="bottom" constant="12" id="DqB-HC-Psy"/>
                             <constraint firstItem="1lQ-6v-oEw" firstAttribute="trailing" secondItem="tfK-VL-Vhr" secondAttribute="trailing" constant="20" id="FGE-0n-Fzy"/>
                             <constraint firstItem="gtx-E7-r7V" firstAttribute="top" secondItem="1lQ-6v-oEw" secondAttribute="top" id="GrW-Qm-TwR"/>
                             <constraint firstItem="PNH-QX-6HW" firstAttribute="leading" secondItem="1lQ-6v-oEw" secondAttribute="leading" id="ZQS-ya-SiN"/>
                             <constraint firstItem="gtx-E7-r7V" firstAttribute="leading" secondItem="1lQ-6v-oEw" secondAttribute="leading" id="f37-oE-kVu"/>
                             <constraint firstItem="gtx-E7-r7V" firstAttribute="trailing" secondItem="1lQ-6v-oEw" secondAttribute="trailing" id="sWv-Ba-JlH"/>
-                            <constraint firstItem="tfK-VL-Vhr" firstAttribute="top" secondItem="gtx-E7-r7V" secondAttribute="bottom" id="yBZ-tz-F8K"/>
+                            <constraint firstItem="PNH-QX-6HW" firstAttribute="top" secondItem="tfK-VL-Vhr" secondAttribute="bottom" constant="8" id="tfc-En-Dlc"/>
+                            <constraint firstItem="tfK-VL-Vhr" firstAttribute="top" secondItem="gtx-E7-r7V" secondAttribute="bottom" constant="8" id="yBZ-tz-F8K"/>
                             <constraint firstItem="PNH-QX-6HW" firstAttribute="trailing" secondItem="1lQ-6v-oEw" secondAttribute="trailing" id="yGn-Ov-Imt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lQ-6v-oEw"/>

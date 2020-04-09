@@ -21,15 +21,17 @@ extension UIView{
     }
     
     func outerRoundvVer2() {
-        self.layer.cornerRadius = 8
+        self.layer.cornerRadius = 20
         self.clipsToBounds = true
     }
     
     func dropShadow() {
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowOffset = CGSize.zero
-        self.layer.shadowRadius = 1
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOpacity = 0.3
+        self.layer.shadowOffset = CGSize(width: 2, height: 5)
+        self.layer.shadowRadius = 2
+        self.layer.shouldRasterize = true
     }
     
 }

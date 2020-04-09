@@ -23,20 +23,20 @@
                             <constraint firstAttribute="width" constant="120" id="rdl-4b-vON"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QT-Cq-WHm">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QT-Cq-WHm">
                         <rect key="frame" x="152" y="10" width="158" height="26.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-hh-D86">
-                        <rect key="frame" x="152" y="44.5" width="158" height="16"/>
+                        <rect key="frame" x="152" y="146" width="158" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de9-nc-ecS">
-                        <rect key="frame" x="152" y="68.5" width="158" height="18"/>
+                        <rect key="frame" x="152" y="170" width="158" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -49,9 +49,9 @@
                     <constraint firstItem="4QT-Cq-WHm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IHA-IM-WHa"/>
                     <constraint firstItem="4QT-Cq-WHm" firstAttribute="leading" secondItem="SZm-cQ-7A0" secondAttribute="trailing" constant="16" id="JgZ-rd-1gF"/>
                     <constraint firstAttribute="trailing" secondItem="WJU-hh-D86" secondAttribute="trailing" constant="10" id="ang-R9-2fj"/>
-                    <constraint firstItem="WJU-hh-D86" firstAttribute="top" secondItem="4QT-Cq-WHm" secondAttribute="bottom" constant="8" id="ay3-d0-Wmk"/>
+                    <constraint firstItem="WJU-hh-D86" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4QT-Cq-WHm" secondAttribute="bottom" constant="8" id="ay3-d0-Wmk"/>
                     <constraint firstItem="SZm-cQ-7A0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gFk-Hq-12U"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="de9-nc-ecS" secondAttribute="bottom" constant="20" id="i0N-NF-dqk"/>
+                    <constraint firstAttribute="bottom" secondItem="de9-nc-ecS" secondAttribute="bottom" constant="12" id="i0N-NF-dqk"/>
                     <constraint firstAttribute="trailing" secondItem="4QT-Cq-WHm" secondAttribute="trailing" constant="10" id="oaF-8f-1ky"/>
                     <constraint firstItem="SZm-cQ-7A0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vkI-3d-s1P"/>
                     <constraint firstAttribute="trailing" secondItem="de9-nc-ecS" secondAttribute="trailing" constant="10" id="wXv-mW-92f"/>
